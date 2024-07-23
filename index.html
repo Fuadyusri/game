@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Hiburan YGY</title>
+  </head>
+  <body>
+    <div class="slot-machine">
+      <div class="slot">
+        <span id="slot1">🍒</span>
+      </div>
+      <div class="slot">
+        <span id="slot2">🍋</span>
+      </div>
+      <div class="slot">
+        <span id="slot3">🍉</span>
+      </div>
+    </div>
+    <button onclick="spin()">Spin</button>
+    <div id="result"></div>
+    <div class="balance">
+      <p>Debit : <span id="balance">0</span></p>
+    </div>
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <br />
+    <button class="auto-spin" data-spins="10" onclick="startAutoSpin(10)">
+      10X Spin
+    </button>
+    <button class="auto-spin" data-spins="20" onclick="startAutoSpin(20)">
+      20X Spin
+    </button>
+    <button class="auto-spin" data-spins="30" onclick="startAutoSpin(30)">
+      30X Spin
+    </button>
+    <button class="auto-spin" data-spins="50" onclick="startAutoSpin(50)">
+      50X Spin
+    </button>
+    <button class="auto-spin" data-spins="100" onclick="startAutoSpin(100)">
+      100X Spin
+    </button>
+    <button class="auto-spin" data-spins="500" onclick="startAutoSpin(500)">
+      500X Spin
+    </button>
+    <button class="auto-spin" data-spins="1000" onclick="startAutoSpin(1000)">
+      1000X Spin
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

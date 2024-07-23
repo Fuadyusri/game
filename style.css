@@ -1,0 +1,233 @@
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 5px solid #3dec46; /* Border merah untuk body */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+}
+
+/* Gaya slot machine */
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Gaya slot */
+.slot {
+    border: 2px solid #fff;
+    padding: 20px;
+    margin: 0 5px;
+    background-color: #fff;
+    font-size: 2.5em;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.slot:hover {
+    transform: scale(1.1);
+}
+
+.card.red-background {
+    background-color: red;
+    color: white;
+}
+
+.slot {
+    border: 2px solid #fff;
+    padding: 20px;
+    margin: 0 5px;
+    background-color: #fff;
+    font-size: 2.5em;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Pastikan transisi warna latar belakang */
+}
+
+/* Gaya umum untuk tombol */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e72929;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #aa1e1e;
+}
+
+/* Gaya khusus untuk tombol spin */
+button.spin {
+    background-color: #c57a17; /* Warna latar belakang jingga */
+    color: white; /* Warna teks putih */
+    padding: 0; /* Padding diatur ke 0 karena ukuran tetap */
+    text-align: center; /* Mengatur teks di tengah */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    display: flex; /* Menggunakan flexbox untuk memposisikan ikon */
+    align-items: center; /* Mengatur item secara vertikal di tengah */
+    justify-content: center; /* Mengatur item secara horizontal di tengah */
+    font-size: 24px; /* Ukuran font untuk ikon */
+    border-radius: 50%; /* Membuat tombol bulat */
+    width: 60px; /* Lebar tombol */
+    height: 60px; /* Tinggi tombol */
+    line-height: 1; /* Menghapus jarak baris tambahan */
+    transition: background-color 0.3s ease; /* Transisi halus saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+    font-family: Arial, sans-serif; /* Font default yang mendukung Unicode */
+}
+
+button.spin:hover {
+    background-color: #45a049; /* Warna latar belakang hijau sedikit lebih gelap */
+}
+
+button.spin:active {
+    background-color: #367c39; /* Warna latar belakang hijau lebih gelap */
+}
+
+/* Gaya umum untuk tombol spin otomatis */
+button.auto-spin {
+    border: none; /* Menghapus border default */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px; /* Padding atas/bawah 10px, kiri/kanan 20px */
+    text-align: center; /* Mengatur teks di tengah */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    display: inline-block; /* Membuat tombol dalam satu baris */
+    font-size: 16px; /* Ukuran font */
+    margin: 5px 2px; /* Margin atas/bawah 5px, kiri/kanan 2px */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 5px; /* Sudut tombol melengkung */
+    transition: background-color 0.3s ease; /* Transisi halus saat hover */
+}
+
+/* Tombol untuk 10X Spin */
+button.auto-spin[data-spins="10"] {
+    background-color: #4CAF50; /* Hijau */
+}
+
+button.auto-spin[data-spins="10"]:hover {
+    background-color: #45a049; /* Hijau lebih gelap */
+}
+
+button.auto-spin[data-spins="10"]:active {
+    background-color: #367c39; /* Hijau lebih gelap lagi */
+}
+
+/* Tombol untuk 20X Spin */
+button.auto-spin[data-spins="20"] {
+    background-color: #2196F3; /* Biru */
+}
+
+button.auto-spin[data-spins="20"]:hover {
+    background-color: #1976D2; /* Biru lebih gelap */
+}
+
+button.auto-spin[data-spins="20"]:active {
+    background-color: #1565C0; /* Biru lebih gelap lagi */
+}
+
+/* Tombol untuk 30X Spin */
+button.auto-spin[data-spins="30"] {
+    background-color: #FFC107; /* Kuning */
+}
+
+button.auto-spin[data-spins="30"]:hover {
+    background-color: #FFA000; /* Kuning lebih gelap */
+}
+
+button.auto-spin[data-spins="30"]:active {
+    background-color: #FF8F00; /* Kuning lebih gelap lagi */
+}
+
+/* Tombol untuk 50X Spin */
+button.auto-spin[data-spins="50"] {
+    background-color: #FF5722; /* Oranye */
+}
+
+button.auto-spin[data-spins="50"]:hover {
+    background-color: #E64A19; /* Oranye lebih gelap */
+}
+
+button.auto-spin[data-spins="50"]:active {
+    background-color: #D84315; /* Oranye lebih gelap lagi */
+}
+
+/* Tombol untuk 100X Spin */
+button.auto-spin[data-spins="100"] {
+    background-color: #9C27B0; /* Ungu */
+}
+
+button.auto-spin[data-spins="100"]:hover {
+    background-color: #8E24AA; /* Ungu lebih gelap */
+}
+
+button.auto-spin[data-spins="100"]:active {
+    background-color: #7B1FA2; /* Ungu lebih gelap lagi */
+}
+
+/* Tombol untuk 500X Spin */
+button.auto-spin[data-spins="500"] {
+    background-color: #3F51B5; /* Biru tua */
+}
+
+button.auto-spin[data-spins="500"]:hover {
+    background-color: #303F9F; /* Biru tua lebih gelap */
+}
+
+button.auto-spin[data-spins="500"]:active {
+    background-color: #283593; /* Biru tua lebih gelap lagi */
+}
+
+/* Tombol untuk 1000X Spin */
+button.auto-spin[data-spins="1000"] {
+    background-color: #E91E63; /* Merah muda */
+}
+
+button.auto-spin[data-spins="1000"]:hover {
+    background-color: #D81B60; /* Merah muda lebih gelap */
+}
+
+button.auto-spin[data-spins="1000"]:active {
+    background-color: #C2185B; /* Merah muda lebih gelap lagi */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1bbbc7;
+}
+
+.balance {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
