@@ -24,7 +24,7 @@ const values = {
     "🍔": 1000,
     "🍕": 1100,
     "🍲": 1200,
-    "🤑": 13000,
+    "🤑": 7000,
     "🍱": 1400,
     "🍣": 1500,
     "🍛": 1600,
@@ -131,7 +131,7 @@ function spin() {
   
         if (Math.random() < jackpotChance) {
             symbol1 = symbol2 = symbol3 = "🤑";
-            winAmount = values["🤑"] + 50000;
+            winAmount = values["🤑"] + 5000;
             result.innerText = `Jackpot! Anda mendapatkan tambahan Rp 5.000!`;
             jackpotSpinCount = 0;
         } else {
