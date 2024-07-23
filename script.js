@@ -127,7 +127,7 @@ function spin() {
   
         let winAmount = 0;
         // presentasi jackpot
-        const jackpotChance = 0.10; // Misalnya : 0.00 = 0% Jackpot / 0.05 = 5% jackpot / 0.10 = 10% jackpot
+        const jackpotChance = 0.5; // Misalnya : 0.00 = 0% Jackpot / 0.05 = 5% jackpot / 0.10 = 10% jackpot
   
         if (Math.random() < jackpotChance) {
             symbol1 = symbol2 = symbol3 = "🤑";
